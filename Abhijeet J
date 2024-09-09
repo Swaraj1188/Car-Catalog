@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cars - Car Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Royal Cars</h1>
+        <nav>
+            <ul>
+                <li><a href="#catalog">Car Catalog</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filter Section -->
+    <section id="filter" class="filter-section">
+        <h2>Find Your Dream Car</h2>
+        <div class="filter-container">
+            <div class="filter-item">
+                <label for="make">Make</label>
+                <input type="text" id="make" placeholder="Enter car make...">
+            </div>
+            <div class="filter-item">
+                <label for="year">Year</label>
+                <select id="year">
+                    <option value="">All Years</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="price">Max Price</label>
+                <input type="number" id="price" placeholder="Enter max price...">
+            </div>
+            <button class="filter-btn">Search</button>
+        </div>
+    </section>
+
+    <!-- Car Catalog Section -->
+    <section id="catalog" class="catalog">
+        <h2>Our Premium Cars</h2>
+        <div class="car-list">
+            <div class="car-item" data-make="Toyota" data-year="2021" data-price="25000">
+                <img src="car-image.jpg" alt="Toyota Camry">
+                <div class="car-info">
+                    <h3>Toyota Camry</h3>
+                    <p>Year: 2021</p>
+                    <p>Price: $25,000</p>
+                    <label>
+                        <input type="checkbox" class="compare-checkbox"> Compare
+                    </label>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
+            </div>
+            <div class="car-item" data-make="Honda" data-year="2022" data-price="30000">
+                <img src="car-image.jpg" alt="Honda Accord">
+                <div class="car-info">
+                    <h3>Honda Accord</h3>
+                    <p>Year: 2022</p>
+                    <p>Price: $30,000</p>
+                    <label>
+                        <input type="checkbox" class="compare-checkbox"> Compare
+                    </label>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Button -->
+        <button class="compare-btn">Compare Selected Cars</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Royal Cars. All rights reserved.</p>
+    </footer>
+</body>
+</html>
